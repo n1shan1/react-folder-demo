@@ -1,0 +1,4 @@
+export const API = {
+  getUsers: () =>
+    fetch("https://jsonplaceholder.typicode.com/users").then((r) => r.json()),
+};
