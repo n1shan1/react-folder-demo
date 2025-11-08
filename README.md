@@ -1,18 +1,19 @@
 # React Starter Template
 
-A clean and scalable folder structure for React projects.  
+A clean and scalable folder structure for React projects.
 This starter template is suitable for small to medium applications, portfolio projects, SaaS MVPs, or learning React with best practices from day one.
 
 ---
 
 ## Features
 
-- Vite for fast development and builds
+- Create React App for fast development and builds
 - React Router setup for page navigation
 - Context API for global state management
 - Organized and modular folder structure
 - Reusable UI component example
 - Example custom hook and API service
+- Testing setup with Jest and React Testing Library
 
 ---
 
@@ -43,7 +44,7 @@ src/
 │   └── logo.png
 │
 ├── App.jsx
-└── main.jsx
+└── index.js
 ```
 
 ---
@@ -55,12 +56,20 @@ src/
 - Node.js (LTS recommended)
 - npm or yarn
 
+### Environment Variables
+
+Create a `.env` file in the root directory and copy the contents from `.env.example`. Update the values as needed for your environment.
+
+```bash
+cp .env.example .env
+```
+
 ### Installation
 
 ```bash
 npm install
-npm run dev
-````
+npm start
+```
 
 ---
 
@@ -79,7 +88,7 @@ npm run dev
 Start development server:
 
 ```bash
-npm run dev
+npm start
 ```
 
 Build for production:
@@ -88,10 +97,10 @@ Build for production:
 npm run build
 ```
 
-Preview build:
+Run tests:
 
 ```bash
-npm run preview
+npm test
 ```
 
 ---

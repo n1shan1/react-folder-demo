@@ -1,3 +1,8 @@
 export default function Profile() {
-  return <h2 style={{ padding: 20 }}>Profile Page</h2>;
+  return (
+    <div>
+      <h2>Profile Page</h2>
+      <p>This is your profile page.</p>
+    </div>
+  );
 }
